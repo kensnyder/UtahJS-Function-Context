@@ -95,7 +95,7 @@ obj.log5()
 // what about indirect eval? -> a=outer, this=window
 var a = 'outer'
 obj.log6 = function() {
-	var a = 'inner'
+	var a = 'inner';
 	(1, eval)('console.log(a, this)')
 }
 obj.log6()
